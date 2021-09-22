@@ -65,10 +65,6 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `name`) VALUES
-(11, 'd', '8277e0910d750195b448797616e091ad', 'd'),
-(13, 'Narutchai', '8f6abc03cba4adba65940fff3a378ff9', 'Nhongharn'),
-(17, 'แตน', '71922ed8d1f8d91d0723e772469cafba', 'แตน'),
-(18, 'suraj', 'e10adc3949ba59abbe56e057f20f883e', 'suraj'),
 (19, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin');
 
 --
