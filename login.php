@@ -1,7 +1,7 @@
 <?php
 if (trim($_POST['username']) == null || trim($_POST['password']) == null) {
     echo "<script>alert('Please fill in information.')</script>";
-    header("Refresh:0 , url =  index.html");
+    header("Refresh:0 , url =  index.php");
     exit();
 } else {
     require_once "./Database/Database.php";
