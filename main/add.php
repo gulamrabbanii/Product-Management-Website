@@ -15,7 +15,7 @@ if ($_POST['username'] != null && $_POST['password'] != null && $_POST['name'] !
     $sql = "INSERT INTO user (username,password,name) VALUES ('" . trim($_POST['username']) . "','" . trim(md5($_POST['password'])) . "','" . trim($_POST['name']) . "')";
     if ($conn->query($sql)) {
         echo "<script>alert('Registration is complete.')</script>";
-        header("Refresh:0 , url = ../index.php");
+        header("Refresh:0 , url = ../index.html");
         exit();
     } else {
         echo "<script>alert('Registration isn't complete.')</script>";

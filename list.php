@@ -3,7 +3,7 @@ session_start();
 require_once "Database/Database.php";
 if ($_SESSION['username'] == null) {
     echo "<script>alert('Please login.');</script>";
-    header("Refresh:0 , url=index.php");
+    header("Refresh:0 , url=index.html");
     exit();
 }
 $username = $_SESSION['username'];
@@ -163,7 +163,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
 <body>
 
     <div class="header">
-        <a href="./login.php" class="button">Log out</a>
+        <a href="./logout.php" class="button">Log out</a>
     </div>
 
     <div class="container">
